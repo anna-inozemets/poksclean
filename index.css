@@ -1109,6 +1109,30 @@ color: var(--var-red-color);
 }
 /*#endregion aboutPage*/
 
+/*#region illnessPage*/
+.illness__greeting-screen {
+  margin-bottom: 165px;
+}
+
+.illness__greeting-screen > img:first-child {
+  height: auto;
+}
+
+.illness__greeting-screen > img:last-child {
+  display: inline-block;
+  opacity: 0;
+  width: 100%;
+}
+
+.illness__description-content {
+  border-color: var(--var-red-color);
+}
+
+.illness__description-content-paragraph h3::before {
+  background-color: var(--var-red-color);
+}
+/*#endregion illnessPage*/
+
 
 /*#region media*/
 @media screen and (max-width: 1600px) {
@@ -1748,6 +1772,12 @@ color: var(--var-red-color);
     line-height: 29px;
   }
   /*#endregion aboutPage*/
+
+  /*#region illnessPage*/
+  .illness__greeting-screen {
+    margin-bottom: 120px;
+  }
+  /*#endregion illnessPage*/
 }
 
 @media screen and (max-width: 1024px) {
@@ -2803,6 +2833,12 @@ color: var(--var-red-color);
     margin-bottom: 15px;
   }
   /*#endregion aboutPage*/
+
+  /*#region illnessPage*/
+  .illness__greeting-screen {
+    margin-bottom: 100px;
+  }
+  /*#endregion illnessPage*/
 }
 
 @media screen and (max-width: 500px) {
@@ -3250,6 +3286,13 @@ color: var(--var-red-color);
     line-height: 12px;
   }
   /*#endregion aboutPage*/
+
+  /*#region illnessPage*/
+  .illness__greeting-screen {
+    margin-bottom: 35px;
+  }
+  /*#endregion illnessPage*/
+
 }
 /*#endregion media*/
 
