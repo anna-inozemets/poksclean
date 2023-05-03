@@ -1133,6 +1133,153 @@ color: var(--var-red-color);
 }
 /*#endregion illnessPage*/
 
+/*#region slickSlider*/
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-arrow {
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  background-image: url(./images/slider__button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slick-arrow.slick-next {
+  transform: translateY(-50%) rotate(180deg);
+  transform-origin: center;
+}
+
+.slick-arrow.slick-disabled {
+  opacity: 0.5;
+}
+
+.slick-dots {
+  display: flex;
+  gap: 15px;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+  bottom: -60px;
+}
+
+.slick-dots li {
+  list-style: none;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active {
+  opacity: 1;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  width: 11px;
+  height: 11px;
+  background-color: var(--var-red-color);
+  border: none;
+  border-radius: 50%;
+}
+/*#endregion slickSlider*/
+
+/*#region usefulPage*/
+.useful__slider-section {
+  margin-bottom: 240px;
+}
+
+.useful__slider-title {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.useful__slider-title h2 {
+  color: var(--var-text-light-color);
+}
+
+.useful__slider-wrapper {
+  position: relative;
+}
+
+.useful__slider-wrapper .slick-arrow.slick-prev {
+  left: 45px;
+}
+
+.useful__slider-wrapper .slick-arrow.slick-next {
+  right: 95px;
+}
+
+.useful__slider {
+  max-width: 79%;
+  margin: 0 auto;
+}
+
+.useful__slider-item {
+  width: max-content;
+  margin-right: 30px;
+}
+
+.useful__card {
+  max-width: 390px;
+  height: auto;
+  border-top-right-radius: 48px;
+  border-bottom-left-radius: 48px;
+  overflow: hidden;
+}
+
+.useful__card-img-wrappper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 345px;
+}
+
+.useful__card-img-wrappper img {
+  object-fit: contain;
+  width: auto;
+  height: 100%;
+}
+
+.useful__card-content {
+  padding: 30px;
+  background-color: var(--var-orange-color);
+}
+
+.useful__card-content h3,
+.useful__card-content a {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.useful__card-content h3 {
+  margin-bottom: 15px;
+  color: var(--var-text-light-color);
+}
+
+.useful__card-content a {
+  padding: 10px 20px;
+  text-align: center;
+  color: var(--var-text-color);
+  background-color: var(--var-text-light-color);
+  border-radius: 64px;
+}
+/*#endregion usefulPage*/
+
+
 
 /*#region media*/
 @media screen and (max-width: 1600px) {
@@ -1451,6 +1598,44 @@ color: var(--var-red-color);
     width: 60px;
   }
   /*#endregion aboutPage*/
+
+  /*#region slickSlider*/
+  .slick-dots {
+    bottom: -45px;
+  }
+  /*#endregion slickSlider*/
+
+  /*#region usefulPage*/
+  .useful__slider-section {
+    margin-bottom: 170px;
+  }
+
+  .useful__slider-title {
+    margin-top: 85px;
+  }
+
+  .useful__slider-wrapper .slick-arrow.slick-prev {
+    left: 25px;
+  }
+
+  .useful__slider-wrapper .slick-arrow.slick-next {
+    right: 55px;
+  }
+
+  .useful__card-img-wrappper {
+    height: 245px;
+  }
+
+  .useful__card-content {
+    padding: 25px 15px;
+  }
+
+  .useful__card-content h3,
+  .useful__card-content a {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  /*#endregion usefulPage*/
 }
 
 @media screen and (max-width: 1280px) {
@@ -1778,6 +1963,60 @@ color: var(--var-red-color);
     margin-bottom: 120px;
   }
   /*#endregion illnessPage*/
+
+  /*#region slickSlider*/
+  .slick-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+  }
+
+  .slick-dots li button {
+    width: 8px;
+    height: 8px;
+  }
+  /*#endregion slickSlider*/
+
+  /*#region usefulPage*/
+  .useful__slider-section {
+    margin-bottom: 135px;
+  }
+
+  .useful__card {
+    max-width: 238px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+  }
+
+  .useful__card-img-wrappper {
+    height: 160px;
+  }
+
+  .useful__card-img-wrappper {
+    height: 160px;
+  }
+
+  .useful__card-content {
+    padding: 15px;
+  }
+
+  .useful__card-content h3,
+  .useful__card-content a {
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  .useful__card-content h3 {
+    margin-bottom: 0;
+  }
+
+  .useful__card-content a {
+    padding: 5px 10px;
+  }
+  /*#endregion usefulPage*/
 }
 
 @media screen and (max-width: 1024px) {
@@ -2272,6 +2511,40 @@ color: var(--var-red-color);
     line-height: 24px;
   }
   /*#endregion aboutPage*/
+
+  /*#region usefulPage*/
+  .useful__slider-title {
+    margin-top: 65px;
+  }
+
+  .useful__card {
+    max-width: 390px;
+    border-top-right-radius: 48px;
+    border-bottom-left-radius: 48px;
+  }
+
+  .useful__card-img-wrappper {
+    height: 235px;
+  }
+
+  .useful__card-content {
+    padding: 30px;
+  }
+
+  .useful__card-content h3,
+  .useful__card-content a {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .useful__card-content h3 {
+    margin-bottom: 15px;
+  }
+
+  .useful__card-content a {
+    padding: 10px 20px;
+  }
+  /*#endregion usefulPage*/
 }
 
 @media screen and (max-width: 768px) {
@@ -2839,6 +3112,67 @@ color: var(--var-red-color);
     margin-bottom: 100px;
   }
   /*#endregion illnessPage*/
+
+  /*#region slickSlider*/
+  .slick-arrow {
+    width: 20px;
+    height: 20px;
+  }
+
+  .slick-dots {
+    gap: 10px;
+    bottom: -20px;
+  }
+
+  .slick-dots li button {
+    width: 6px;
+    height: 6px;
+  }
+  /*#endregion slickSlider*/
+
+  /*#region usefulPage*/
+  .useful__slider-wrapper .slick-arrow.slick-prev {
+    left: 0;
+  }
+
+  .useful__slider-wrapper .slick-arrow.slick-next {
+    right: 25px;
+  }
+
+  .useful__slider-title {
+    margin-top: 45px;
+  }
+
+  .useful__card {
+    max-width: 215px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+  }
+
+  .useful__card-img-wrappper {
+    height: 145px;
+  }
+
+  .useful__card-content {
+    padding: 5px;
+  }
+
+  .useful__card-content h3,
+  .useful__card-content a {
+    font-size: 10px;
+    line-height: 19px;
+  }
+
+  .useful__card-content h3 {
+    margin-bottom: 0;
+  }
+
+  .useful__card-content a {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    padding: 5px 10px;
+  }
+  /*#endregion usefulPage*/
 }
 
 @media screen and (max-width: 500px) {
@@ -3292,6 +3626,45 @@ color: var(--var-red-color);
     margin-bottom: 35px;
   }
   /*#endregion illnessPage*/
+
+  /*#region slickSlider*/
+  /*#endregion slickSlider*/
+
+  /*#region usefulSlider*/
+  .useful__slider-section {
+    margin-bottom: 65px;
+  }
+
+  .useful__slider-title {
+    margin-top: 30px;
+  }
+
+  .useful__slider {
+    max-width: 80%;
+  }
+
+  .useful__slider-item {
+    margin-right: 0;
+  }
+
+  .useful__slider-wrapper .slick-arrow.slick-next {
+    right: 0;
+  }
+
+  .useful__card {
+    margin: 0 auto;
+    max-width: 200px;
+  }
+
+  .useful__card-img-wrappper {
+    max-height: 140px;
+  }
+
+  .useful__card-content {
+    padding: 10px;
+  }
+  /*#endregion usefulSlider*/
+
 
 }
 /*#endregion media*/
