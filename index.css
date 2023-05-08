@@ -149,6 +149,15 @@ h2 {
 
 .header__menu-list li {
   margin-right: 25px;
+  transition: color 0.2s ease;
+}
+
+.header__menu-list li.active {
+  color: var(--var-orange-color);
+}
+
+.header__menu-list li:hover {
+  color: var(--var-red-color);
 }
 
 .header__menu-list li:nth-child(3) {
@@ -182,11 +191,23 @@ h2 {
   line-height: 29px;
   color: var(--var-text-light-color);
   border-radius: 37px;
+  transition: background-color 0.2s ease;
+}
+
+.header__menu-list li:nth-child(4) a {
   background-color: var(--var-red-color);
+}
+
+.header__menu-list li:nth-child(4) a:hover {
+  background-color: var(--var-orange-color);
 }
 
 .header__menu-list li:nth-child(5) a {
   background-color: var(--var-orange-color);
+}
+
+.header__menu-list li:nth-child(5) a:hover {
+  background-color: var(--var-red-color);
 }
 
 .header__menu-list a {
@@ -244,10 +265,15 @@ h2 {
 }
 
 .main__effects-fact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   position: relative;
   margin-right: 15px;
-  padding: 20px 0 15px 50px;
+  padding-left: 50px;
+  padding-right: 25px;
   width: 100%;
+  min-height: 100px;
   background-color: var(--var-red-color);
 }
 
@@ -657,6 +683,11 @@ color: var(--var-red-color);
   border: none;
   background-color: var(--var-red-color);
   cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.main__treatment-description-button:hover {
+  transform: scale(1.1);
 }
 
 .main__treatment-description-button:last-child {
@@ -726,6 +757,11 @@ color: var(--var-red-color);
   color: var(--var-text-light-color);
   background-color: var(--var-red-color);
   border-radius: 116px;
+  transition: background-color 0.2s ease;
+}
+
+.main__method a:hover {
+  background-color: var(--var-orange-color);
 }
 
 .main__method-content > img:last-child {
@@ -864,10 +900,20 @@ color: var(--var-red-color);
   background-color: var(--var-red-color);
   border-bottom-left-radius: 32px;
   border-top-right-radius: 32px;
+  transition: background-color 0.2s ease;
+}
+
+.main__buy-actions-group a:last-child:hover {
+  background-color: var(--var-orange-color);
 }
 
 .main__buy-actions-group:last-child a:last-child {
   background-color: var(--var-orange-color);
+  transition: background-color 0.2s ease;
+}
+
+.main__buy-actions-group:last-child a:last-child:hover {
+  background-color: var(--var-red-color);
 }
 
 .main__connect {
@@ -909,6 +955,14 @@ color: var(--var-red-color);
   color: #FFFFFF;
   background-color: var(--var-red-color);
   border-radius: 32px;
+  border: solid 2px transparent;
+  transition: all 0.3s ease;
+}
+
+.main__connect-content a:hover {
+  background-color: var(--var-text-light-color);
+  color: var(--var-text-color);
+  border: solid 2px var(--var-red-color);
 }
 
 .footer {
@@ -1276,6 +1330,12 @@ color: var(--var-red-color);
   color: var(--var-text-color);
   background-color: var(--var-text-light-color);
   border-radius: 64px;
+  transition: all 0.2s ease;
+}
+
+.useful__card-content a:hover {
+  background-color: var(--var-red-color);
+  color: var(--var-text-light-color);
 }
 /*#endregion usefulPage*/
 
@@ -1423,6 +1483,7 @@ color: var(--var-red-color);
     margin-right: 0;
     padding: 20px;
     margin-bottom: 45px;
+    min-height: 80px;
   }
   
   .main__effects-fact:nth-child(2) {
@@ -2314,6 +2375,7 @@ color: var(--var-red-color);
   
   .main__effects-fact {
     padding: 10px;
+    min-height: 50px;
   }
 
   .main__effects-fact:nth-child(2) {
@@ -2762,6 +2824,7 @@ color: var(--var-red-color);
   .main__effects-fact {
     margin-bottom: 15px;
     padding: 10px;
+    min-height: 40px;
   }
 
   .main__effects-fact:nth-child(2) {
@@ -3446,6 +3509,7 @@ color: var(--var-red-color);
   .main__effects-fact {
     margin-bottom: 5px;
     padding: 5px;
+    text-align: center;
   }
 
   .main__effects-fact:nth-child(2) {
@@ -3458,9 +3522,11 @@ color: var(--var-red-color);
   }
 
   .main__effects-fact p {
-    max-width: 95%;
+    max-width: 100%;
+    width: 100%;
     font-size: 11px;
     line-height: 13px;
+    margin: 0;
   }
 
   .main__effects-fact img,
