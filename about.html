@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>ПоксКлін</title>
 </head>
 <body class="content__wrapper">
@@ -64,7 +65,7 @@
   <main>
     <section class="section about__greeting-screen main__section-with-background">
       <img src="./images/about__greeting-screen.jpg">
-      <div class="about__greeting-screen-description-text">
+      <div data-aos="fade-right" data-aos-delay="500" class="about__greeting-screen-description-text">
         <h1>
           ПРИ ВІТРЯНІЙ ВІСПІ, СВЕРБІННІ
         </h1>
@@ -74,21 +75,21 @@
       </div>
     </section>
     <section class="section about__effects">
-      <div class="main__effects-description about__effects-description">
+      <div data-aos="fade-right" class="main__effects-description about__effects-description">
         <p>
           В 40 країнах світу існує засіб для миттєвого полегшення симптомів вітряної віспи – протисвербіжний мус
           <span><img src="./images/poksclean__title.svg" alt="ПоксКлін"></span>.
           Сучасний засіб, що має пролонгований охолоджуючий ефект та швидко усуває сиптоми вітряної віспи у дітей та дорослих.
         </p>
       </div>
-      <p>
+      <p data-aos="fade-left">
         При появі перших висипань рекомендовано застосовувати охолоджуючий мус ПоксКлін, який допомагає захистити
         шкіру від бактерій, попереджає їх подальшу появу та зменшує ризик утворення рубців від везикул.
       </p>
     </section>
     <section class="section about__description">
       <div class="about__description-content">
-        <div class="about__decription-content-paragraph">
+        <div data-aos="fade-up" class="about__decription-content-paragraph">
           <h3>
             ЩО ВИ ПОВИННІ ЗНАТИ ПЕРЕД ВИКОРИСТАННЯМ ПОКСКЛІН МУС?
           </h3>
@@ -101,7 +102,7 @@
             застосуванням ПоксКлін Охолоджуючий мус, невідомі.
           </p>
         </div>
-        <div class="about__decription-content-paragraph">
+        <div data-aos="fade-up" class="about__decription-content-paragraph">
           <h3>
             СПОСІБ ТА ДОЗИ ЗАСТОСУВАННЯ:
           </h3>
@@ -132,7 +133,7 @@
         Замовити онлайн в аптеках Вашого міста
       </h2>
       <div class="main__buy-actions">
-        <div class="main__buy-actions-group">
+        <div data-aos="fade-right" class="main__buy-actions-group">
           <a href="" class="main__buy-actions-group-link">
             <img src="./images/tabletki.svg" alt="Tabletki">
           </a>
@@ -140,7 +141,7 @@
             Замовити
           </a>
         </div>
-        <div class="main__buy-actions-group">
+        <div data-aos="fade-left" class="main__buy-actions-group">
           <a href="" class="main__buy-actions-group-link">
             <img src="./images/liki.svg" alt="Liki24">
           </a>
@@ -152,7 +153,7 @@
     </section>
     <section class="section main__connect main__section-with-background">
       <img src="./images/connect__background.jpg">
-      <div class="main__connect-content">
+      <div data-aos="flip-down" data-aos-delay="500" class="main__connect-content">
         <img src="./images/connect__logo.svg" alt="ПоксКлін">
         <h2>
           Зворотний зв'язок
@@ -168,7 +169,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__contacts">
+    <div data-aos="fade-up" data-aos-delay="100" class="footer__contacts">
       <a href="">
         <img src="./images/poksclean__logo.svg" alt="ПоксКлін">
       </a>
@@ -196,12 +197,12 @@
         <img src="./images/biodex__logo.svg" alt="Biodex">
       </a>
     </div>
-    <div class="footer__selftreatment">
+    <div data-aos="fade-up" data-aos-delay="300" class="footer__selftreatment">
       <p>
         САМОЛІКУВАННЯ МОЖЕ БУТИ ШКІДЛИВИМ ДЛЯ ВАШОГО ЗДОРОВ'Я
       </p>
     </div>
-    <div class="footer__rights">
+    <div data-aos="fade-up" data-aos-delay="300" class="footer__rights">
       <a href="">
         <img src="./images/poksclean__logo.svg">
       </a>
@@ -225,6 +226,7 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./index.js"></script>
 </body>
 </html>
