@@ -94,7 +94,10 @@ h2 {
   line-height: 47px;
   text-transform: uppercase;
   color: #000000;
+}
 
+img {
+  object-fit: cover;
 }
 /*#endregion generalStyles*/
 

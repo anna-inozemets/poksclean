@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>ПоксКлін</title>
 </head>
 <body class="content__wrapper">
@@ -64,7 +65,11 @@
   <main>
     <section class="section main__greeting-screen main__section-with-background">
       <img src="./images/greeting__screen_background.jpg" alt="ПоксКлін">
-      <div class="main__greeting-screen-description">
+      <div
+        data-aos="fade-left"
+        data-aos-delay="500"
+        class="main__greeting-screen-description"
+      >
         <div class="main__greeting-screen-description-text">
           <div class="main__greeting-screen-description-text-logo">
             <img src="./images/poksclean__logo.svg" alt="ПоксКлін">
@@ -78,26 +83,26 @@
     </section>
     <section class="section main__effects">
       <div class="main__effects-facts">
-        <div class="main__effects-fact">
+        <div data-aos="zoom-in" class="main__effects-fact">
           <img src="./images/time__icon.svg" alt="">
           <p>
             Миттєве полегшення свербіжу
           </p>
         </div>
-        <div class="main__effects-fact">
+        <div data-aos="zoom-in" class="main__effects-fact">
           <img src="./images/snow__icon.svg" alt="">
           <p>
             Надає охолоджуючий і заспокійливий ефект
           </p>
         </div>
-        <div class="main__effects-fact">
+        <div data-aos="zoom-in" class="main__effects-fact">
           <img src="./images/cross_icon.svg" alt="">
           <p>
             Запобігає утворенню рубців
           </p>
         </div>
       </div>
-      <div class="main__effects-description">
+      <div data-aos="zoom-in" class="main__effects-description">
         <p>
           ПоксКліну довіряють батьки, які турбуються про своїх малюків, і обирають його за якість, зручність
           у використанні та натуральні складові
@@ -109,45 +114,55 @@
     </section>
     <section class="section main__impact">
       <h2>
-        З <span> 
+        З <span>
           <img src="./images/poksclean__title.svg" alt="">
         </span> Ви та Ваша дитина відчуєте швидке полегшення
       </h2>
       <div class="main__impact-description">
         <div class="main__impact-description-part main__impact-description-negative">
-          <img src="./images/minus__boy.jpg" alt="Використання традиційної методики лікування">
-          <div class="main__impact-description-part-title main__impact-description-negative-title">
+          <img
+            data-aos="fade-right"
+            src="./images/minus__boy.jpg"
+            alt="Використання традиційної методики лікування"
+            style="z-index: 1;"
+          >
+          <div data-aos="fade-right" class="main__impact-description-part-title main__impact-description-negative-title">
             <p>
               Використання традиційної методики лікування:
             </p>
           </div>
           <ul class="main__impact-description-part-list main__impact-description-negative-list">
-            <li>
+            <li data-aos="fade-right" data-aos-delay="1000">
               Не усувають свербіж
             </li>
-            <li>
+            <li data-aos="fade-right" data-aos-delay="1100">
               Застарілі засоби важко змиваються, залишаються плями
             </li>
-            <li>
+            <li data-aos="fade-right" data-aos-delay="1200">
               Ризки утворення рубців
             </li>
           </ul>
         </div>
         <div class="main__impact-description-part main__impact-description-positive">
-          <img src="./images/plus__boy.jpg" alt="Використання традиційної методики лікування">
-          <div class="main__impact-description-part-title main__impact-description-positive-title">
+          <img
+            data-aos="fade-left"
+            src="./images/plus__boy.jpg"
+            alt="Використання традиційної методики лікування"
+            style="z-index: 1;"
+          >
+          <div data-aos="fade-left" class="main__impact-description-part-title main__impact-description-positive-title">
             <p>
               Використання охолоджуючого мусу <span>Покс</span>Клін:
             </p>
           </div>
           <ul class="main__impact-description-part-list main__impact-description-positive-list">
-            <li>
+            <li data-aos="fade-left" data-aos-delay="1000">
               Миттєво усувають свербіж
             </li>
-            <li>
+            <li data-aos="fade-left" data-aos-delay="1100">
               Не залишає кольорових плям
             </li>
-            <li>
+            <li data-aos="fade-left" data-aos-delay="1200">
               Зпобігає утворенню рубців
             </li>
           </ul>
@@ -166,47 +181,47 @@
         <div class="main__advantages-description-title-background"></div>
         <div class="main__advantages-description-title-background"></div>
         <div class="main__advantages-description-title-background"></div>
-        <h3>
+        <h3 data-aos="zoom-in">
           М’який охолоджуючий ефект
         </h3>
-        <p>
+        <p data-aos="zoom-in">
           Завдяки охолоджуючим властивостям, ПоксКлін охолоджуючий мус заспокоює подразнену шкіру, 
           допомагаючи уникнути розчісування, а отже запобігає утворенню рубців від везикул
         </p>
-        <h3>
+        <h3 data-aos="zoom-in">
           Захищає шкіру від шкідливих бактерій
         </h3>
-        <p>
+        <p data-aos="zoom-in">
           Запатентований активний антибактеріальний 2QR-комплекс натурального рослинного походження, 
           який допомагає захистити шкіру від бактерій, перешкоджає їх подальшу появу
         </p>
-        <h3>
+        <h3 data-aos="zoom-in">
           Безпечний у застосуванні
         </h3>
-        <p>
+        <p data-aos="zoom-in">
           Не містить жодних агресивно-токсичних хімічних речовин і безпечний для зовнішнього застосування 
           на шкірі дітей. Не існує відомих побічних ефектів, пов’язаних з використанням ПоксКлін
         </p>
 
-        <h3>
+        <h3 data-aos="zoom-in">
           Зручний у нанесенні
         </h3>
-        <p>
+        <p data-aos="zoom-in">
           Застосування ватних паличок, густих лосьонів, мазей при намазуванні пухирців може призвести 
           до їх пошкодження. Охолоджуючий мус при вітряній віспі, свербінні ПоксКлін дуже легкий в нанесенні 
           і не спричиняє тертя з пухирцями при нанесенні на шкіру
         </p>
-        <h3>
+        <h3 data-aos="zoom-in">
           Складається з натуральних компонентів
         </h3>
-        <p>
+        <p data-aos="zoom-in">
           До складу входять пантенол, екстракти алое вера, ромашки і лаванди, які забезпечують охолоджуючий,
           заспокійливий і пом’якшувальний ефект
         </p>
-        <h3>
+        <h3 data-aos="zoom-in">
           Швидко діє
         </h3>
-        <p>
+        <p data-aos="zoom-in">
           Забезпечує миттєве полегшення відчуття свербіння, прискорює природній процес загоєння і не 
           викликає звикання
         </p>
@@ -215,7 +230,7 @@
     </section>
     <section class="section main__treatment main__section-with-background">
       <img src="./images/treatment__background.jpg" alt="Вітряна віспа та лікування">
-      <div class="main__treatment-description">
+      <div data-aos="flip-left" data-aos-delay="500" class="main__treatment-description">
         <h2>
           Вітряна віспа та лікування
         </h2>
@@ -307,7 +322,7 @@
         </h2>
       </div>
       <div class="main__answer-accordion">
-        <div class="main__answer-accordion-item">
+        <div data-aos="fade-up" class="main__answer-accordion-item">
           <button class="main__answer-accordion-button">
             Як довго триває вітряна віспа?
           </button>
@@ -321,7 +336,7 @@
             </p>
           </div>
         </div>
-        <div class="main__answer-accordion-item">
+        <div data-aos="fade-up" class="main__answer-accordion-item">
           <button class="main__answer-accordion-button">
             Як довго триває вітряна віспа?
           </button>
@@ -335,7 +350,7 @@
             </p>
           </div>
         </div>
-        <div class="main__answer-accordion-item">
+        <div data-aos="fade-up" class="main__answer-accordion-item">
           <button class="main__answer-accordion-button">
             Як довго триває вітряна віспа?
           </button>
@@ -349,7 +364,7 @@
             </p>
           </div>
         </div>
-        <div class="main__answer-accordion-item">
+        <div data-aos="fade-up" class="main__answer-accordion-item">
           <button class="main__answer-accordion-button">
             Як довго триває вітряна віспа?
           </button>
@@ -363,7 +378,7 @@
             </p>
           </div>
         </div>
-        <div class="main__answer-accordion-item">
+        <div data-aos="fade-up" class="main__answer-accordion-item">
           <button class="main__answer-accordion-button">
             Як довго триває вітряна віспа?
           </button>
@@ -377,7 +392,7 @@
             </p>
           </div>
         </div>
-        <div class="main__answer-accordion-item">
+        <div data-aos="fade-up" class="main__answer-accordion-item">
           <button class="main__answer-accordion-button">
             Як довго триває вітряна віспа?
           </button>
@@ -398,7 +413,7 @@
         Замовити онлайн в аптеках Вашого міста
       </h2>
       <div class="main__buy-actions">
-        <div class="main__buy-actions-group">
+        <div data-aos="fade-right" class="main__buy-actions-group">
           <a href="" class="main__buy-actions-group-link">
             <img src="./images/tabletki.svg" alt="Tabletki">
           </a>
@@ -406,7 +421,7 @@
             Замовити
           </a>
         </div>
-        <div class="main__buy-actions-group">
+        <div data-aos="fade-left" class="main__buy-actions-group">
           <a href="" class="main__buy-actions-group-link">
             <img src="./images/liki.svg" alt="Liki24">
           </a>
@@ -418,7 +433,7 @@
     </section>
     <section class="section main__connect main__section-with-background">
       <img src="./images/connect__background.jpg">
-      <div class="main__connect-content">
+      <div data-aos="flip-down" data-aos-delay="500" class="main__connect-content">
         <img src="./images/connect__logo.svg" alt="ПоксКлін">
         <h2>
           Зворотний зв'язок
@@ -434,7 +449,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__contacts">
+    <div data-aos="fade-up" data-aos-delay="100" class="footer__contacts">
       <a href="">
         <img src="./images/poksclean__logo.svg" alt="ПоксКлін">
       </a>
@@ -462,12 +477,12 @@
         <img src="./images/biodex__logo.svg" alt="Biodex">
       </a>
     </div>
-    <div class="footer__selftreatment">
+    <div data-aos="fade-up" data-aos-delay="300" class="footer__selftreatment">
       <p>
         САМОЛІКУВАННЯ МОЖЕ БУТИ ШКІДЛИВИМ ДЛЯ ВАШОГО ЗДОРОВ'Я
       </p>
     </div>
-    <div class="footer__rights">
+    <div data-aos="fade-up" data-aos-delay="500" class="footer__rights">
       <a href="">
         <img src="./images/poksclean__logo.svg">
       </a>
@@ -491,6 +506,7 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./index.js"></script>
 </body>
 </html>

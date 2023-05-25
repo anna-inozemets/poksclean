@@ -1,3 +1,7 @@
+AOS.init({
+  duration: 1000,
+});
+
 function openTab(evt, tabName) {
   const tabcontent = document.querySelectorAll(".main__treatment-description-content");
   for (let i = 0; i < tabcontent.length; i++) {
