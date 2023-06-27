@@ -43,3 +43,18 @@ burgerMenuButton.addEventListener('click', () => {
   burgerMenuButton.classList.toggle('active');
   menu.classList.toggle('active');
 });
+
+const moreContentButton = document.querySelector('.more_button-article');
+const moreContentWrapper = document.querySelector('.main__descrtption-paragraph-wrapper')
+
+moreContentButton.addEventListener('click', () => {
+  if (!moreContentWrapper.classList.contains('visible')) {
+    moreContentButton.innerHTML = 'Менше';
+    moreContentWrapper.classList.add('visible');
+    moreContentWrapper.style.maxHeight = `${moreContentWrapper.scrollHeight}px`;
+  } else {
+    moreContentButton.innerHTML = 'Читати далі';
+    moreContentWrapper.classList.remove('visible');
+    moreContentWrapper.style.maxHeight = '';
+  }
+});

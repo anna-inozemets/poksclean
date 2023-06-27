@@ -24,3 +24,17 @@ $(document).ready(function() {
 $(window).on("scroll", function () {
   AOS.init();
 });
+
+$(document).ready(function() {
+  $('#openModal').click(function() {
+    $('.modal').addClass('open');
+  });
+
+  $('#closeModal').click(function() {
+    $('.modal').removeClass('open');
+  });
+  $('#submitForm').click(function(event) {
+    event.preventDefault();
+    $('.modal').removeClass('open');
+  })
+});
